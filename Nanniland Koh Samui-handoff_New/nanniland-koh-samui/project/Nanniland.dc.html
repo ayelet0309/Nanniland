@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700;800&family=Frank+Ruhl+Libre:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#EFE6D8;color:#33302A;font-family:'Assistant',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+@keyframes nlfloat{0%,100%{transform:translate(0,0) rotate(0deg)}50%{transform:translate(0,-22px) rotate(6deg)}}
+a{color:inherit}
+</style>
+</helmet>
+<div dir="rtl" style="max-width:480px;margin:0 auto;background:#FFFDF9;min-height:100vh;box-shadow:0 0 80px rgba(95,75,45,.16);overflow-x:hidden;position:relative;padding-bottom:96px">
+
+<!-- ============ HERO ============ -->
+<section style="position:relative;padding:30px 24px 44px;overflow:hidden">
+  <div style="position:absolute;top:-70px;left:-90px;width:260px;height:260px;border-radius:48% 52% 58% 42%/55% 45% 55% 45%;background:radial-gradient(circle at 35% 35%,#F4D9CF,#EBC8BC);filter:blur(6px);opacity:.55;animation:nlfloat 16s ease-in-out infinite;z-index:0"></div>
+  <div style="position:absolute;top:120px;right:-70px;width:200px;height:200px;border-radius:54% 46% 42% 58%/48% 56% 44% 52%;background:radial-gradient(circle at 40% 40%,#DCE5D2,#C9D6BB);filter:blur(6px);opacity:.5;animation:nlfloat 19s ease-in-out infinite reverse;z-index:0"></div>
+
+  <header style="position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;margin-bottom:42px">
+    <div style="display:flex;align-items:center;gap:9px">
+      <span style="width:34px;height:34px;border-radius:50%;background:#5F6B50;display:flex;align-items:center;justify-content:center;flex:none">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFDF9" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.6-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.4-7 10-7 10z"/></svg>
+      </span>
+      <span style="font-family:'Frank Ruhl Libre',serif;font-size:23px;font-weight:600;letter-spacing:.01em;color:#33302A">Nanniland</span>
+    </div>
+    <a href="#contact" style="font-size:13.5px;font-weight:700;color:#5F6B50;text-decoration:none;white-space:nowrap">צור קשר</a>
+  </header>
+
+  <div style="position:relative;z-index:2" data-reveal>
+    <p style="margin:0 0 14px;font-size:11.5px;font-weight:700;letter-spacing:.1em;color:#5F6B50">ברוכים הבאים ל־Nanniland · קוֹ סמוּי</p>
+    <h1 style="margin:0 0 18px;font-family:'Frank Ruhl Libre',serif;font-weight:500;font-size:50px;line-height:1.05;letter-spacing:-.01em;color:#2E2A24;text-wrap:balance">תירגעו.<br>אנחנו כאן בשביל<br><span style="color:#B96B50">הקטנטנים.</span></h1>
+    <p style="margin:0 0 26px;font-size:17px;line-height:1.6;color:#6E6559;max-width:33ch">נניות מקצועיות, חמות ואוהבות ילדים — שיהפכו את החופשה שלכם בקוסמוי לחוויה רגועה ונעימה, מותאמת בדיוק לצרכים שלכם.</p>
+    <a href="#contact" style="display:inline-flex;align-items:center;gap:10px;background:#DE7E61;color:#fff;text-decoration:none;font-weight:800;font-size:16.5px;padding:17px 30px;border-radius:40px;box-shadow:0 14px 30px rgba(222,126,97,.34);transition:transform .25s ease,background .25s ease,box-shadow .25s ease" style-hover="background:#CE6E51;transform:translateY(-2px);box-shadow:0 18px 38px rgba(222,126,97,.4)">
+      להזמין נני
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+    </a>
+  </div>
+
+  <div data-reveal style="position:relative;z-index:2;margin-top:34px;border-radius:30px;overflow:hidden;box-shadow:0 26px 50px rgba(95,75,45,.2)">
+    <img src="assets/hero2.jpg" alt="נני אוהבת מחזיקה תינוק במלון נופש בקוסמוי" style="display:block;width:100%;height:460px;object-fit:cover;object-position:50% 22%">
+    <div style="position:absolute;right:16px;bottom:16px;left:16px;display:flex;align-items:center;gap:10px;background:rgba(255,253,249,.92);backdrop-filter:blur(8px);border-radius:18px;padding:12px 15px">
+      <span style="width:30px;height:30px;border-radius:50%;background:#DCE5D2;display:flex;align-items:center;justify-content:center;flex:none">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#5F6B50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      </span>
+      <span style="font-size:13.5px;font-weight:700;color:#3C4733;line-height:1.3">נניות מקצועיות שאוהבות ילדים</span>
+    </div>
+  </div>
+
+  <sc-if value="{{ showTrustStats }}" hint-placeholder-val="{{ true }}">
+  <div data-reveal style="display:flex;justify-content:space-between;gap:8px;margin-top:26px;text-align:center">
+    <div style="flex:1">
+      <div style="font-family:'Frank Ruhl Libre',serif;font-size:28px;font-weight:600;color:#B96B50;line-height:1.1">5 שע׳</div>
+      <div style="font-size:12px;font-weight:700;color:#8a8175;margin-top:5px">מינימום הזמנה</div>
+    </div>
+    <div style="width:1px;background:rgba(51,48,42,.12)"></div>
+    <div style="flex:1">
+      <div style="font-family:'Frank Ruhl Libre',serif;font-size:28px;font-weight:600;color:#B96B50;line-height:1.1">עב · אנ</div>
+      <div style="font-size:12px;font-weight:700;color:#8a8175;margin-top:5px">שפות</div>
+    </div>
+    <div style="width:1px;background:rgba(51,48,42,.12)"></div>
+    <div style="flex:1">
+      <div style="font-family:'Frank Ruhl Libre',serif;font-size:28px;font-weight:600;color:#B96B50;line-height:1.1" dir="ltr">100%</div>
+      <div style="font-size:12px;font-weight:700;color:#8a8175;margin-top:5px">מותאם אישית</div>
+    </div>
+  </div>
+  </sc-if>
+</section>
+
+<!-- ============ SERVICE HIGHLIGHTS ============ -->
+<section style="position:relative;margin-top:-18px;padding:48px 22px 46px;background:#F3EDE2;border-radius:38px 38px 0 0">
+  <div data-reveal style="text-align:center;margin-bottom:30px">
+    <p style="margin:0 0 10px;font-size:11.5px;font-weight:700;letter-spacing:.14em;color:#5F6B50">למה ננילנד</p>
+    <h2 style="margin:0;font-family:'Frank Ruhl Libre',serif;font-weight:500;font-size:36px;line-height:1.1;color:#2E2A24">טיפול שמרגיש<br>כמו משפחה</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:13px">
+    <div data-reveal style="background:#FFFDF9;border-radius:24px;padding:22px 18px;box-shadow:0 10px 26px rgba(95,75,45,.07)">
+      <span style="width:42px;height:42px;border-radius:14px;background:#EFE0D9;display:flex;align-items:center;justify-content:center;margin-bottom:14px"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#B96B50" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.7-6-10a6 6 0 0 1 12 0c0 4.3-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg></span>
+      <h3 style="margin:0 0 5px;font-size:16.5px;font-weight:800;color:#33302A">בקוסמוי בלבד</h3>
+      <p style="margin:0;font-size:14px;line-height:1.5;color:#7a7165">השירות ניתן באי קוֹ סמוּי.</p>
+    </div>
+    <div data-reveal style="background:#FFFDF9;border-radius:24px;padding:22px 18px;box-shadow:0 10px 26px rgba(95,75,45,.07)">
+      <span style="width:42px;height:42px;border-radius:14px;background:#DCE5D2;display:flex;align-items:center;justify-content:center;margin-bottom:14px"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#5F6B50" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11 12 4l8 7"/><path d="M6 10v9h12v-9"/></svg></span>
+      <h3 style="margin:0 0 5px;font-size:16.5px;font-weight:800;color:#33302A">מגיעות עד אליכם</h3>
+      <p style="margin:0;font-size:14px;line-height:1.5;color:#7a7165">לוילה או למלון שבו אתם שוהים.</p>
+    </div>
+    <div data-reveal style="background:#FFFDF9;border-radius:24px;padding:22px 18px;box-shadow:0 10px 26px rgba(95,75,45,.07)">
+      <span style="width:42px;height:42px;border-radius:14px;background:#DCE5D2;display:flex;align-items:center;justify-content:center;margin-bottom:14px"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#5F6B50" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.6-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.4-7 10-7 10z"/></svg></span>
+      <h3 style="margin:0 0 5px;font-size:16.5px;font-weight:800;color:#33302A">תינוקות וילדים</h3>
+      <p style="margin:0;font-size:14px;line-height:1.5;color:#7a7165">השירות מתאים לכל הגילאים.</p>
+    </div>
+    <div data-reveal style="background:#FFFDF9;border-radius:24px;padding:22px 18px;box-shadow:0 10px 26px rgba(95,75,45,.07)">
+      <span style="width:42px;height:42px;border-radius:14px;background:#EFE0D9;display:flex;align-items:center;justify-content:center;margin-bottom:14px"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#B96B50" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.1 4.6 5 .5-3.8 3.4 1.1 5L12 13.9 7.6 16.5l1.1-5L4.9 8.1l5-.5z"/></svg></span>
+      <h3 style="margin:0 0 5px;font-size:16.5px;font-weight:800;color:#33302A">לכל מצב</h3>
+      <p style="margin:0;font-size:14px;line-height:1.5;color:#7a7165">חופשה משפחתית, זמן זוגי או ליווי ביום ובערב.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INFORMATION WE NEED ============ -->
+<section style="position:relative;margin-top:-22px;padding:48px 22px 44px;background:#FFFDF9;border-radius:38px 38px 0 0">
+  <div data-reveal style="border-radius:28px;overflow:hidden;box-shadow:0 22px 44px rgba(95,75,45,.16);margin-bottom:30px">
+    <img src="assets/info2.jpg" alt="נני וילדים בונים ארמון חול על חוף בקוסמוי" style="display:block;width:100%;height:240px;object-fit:cover;object-position:50% 40%">
+  </div>
+  <div data-reveal>
+    <p style="margin:0 0 10px;font-size:11.5px;font-weight:700;letter-spacing:.14em;color:#5F6B50">לפני שמתחילים</p>
+    <h2 style="margin:0 0 8px;font-family:'Frank Ruhl Libre',serif;font-weight:500;font-size:34px;line-height:1.1;color:#2E2A24">קצת על<br>המשפחה שלכם</h2>
+    <p style="margin:0 0 22px;font-size:15.5px;line-height:1.6;color:#7a7165">כדי שנוכל לבצע התאמה אישית ומדויקת, נשמח לקבל מכם את הפרטים הבאים:</p>
+  </div>
+  <div data-reveal style="background:#F3EDE2;border-radius:26px;padding:10px 20px">
+    <div style="display:flex;align-items:center;gap:13px;padding:15px 0;border-bottom:1px solid rgba(51,48,42,.08)"><span style="width:24px;height:24px;border-radius:50%;background:#DE7E61;display:flex;align-items:center;justify-content:center;flex:none"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span style="font-size:15.5px;font-weight:700;color:#33302A">תאריכי החופשה</span></div>
+    <div style="display:flex;align-items:center;gap:13px;padding:15px 0;border-bottom:1px solid rgba(51,48,42,.08)"><span style="width:24px;height:24px;border-radius:50%;background:#DE7E61;display:flex;align-items:center;justify-content:center;flex:none"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span style="font-size:15.5px;font-weight:700;color:#33302A">שעות מבוקשות בכל יום</span></div>
+    <div style="display:flex;align-items:center;gap:13px;padding:15px 0;border-bottom:1px solid rgba(51,48,42,.08)"><span style="width:24px;height:24px;border-radius:50%;background:#DE7E61;display:flex;align-items:center;justify-content:center;flex:none"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span style="font-size:15.5px;font-weight:700;color:#33302A">גילאי הילדים</span></div>
+    <div style="display:flex;align-items:center;gap:13px;padding:15px 0;border-bottom:1px solid rgba(51,48,42,.08)"><span style="width:24px;height:24px;border-radius:50%;background:#DE7E61;display:flex;align-items:center;justify-content:center;flex:none"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span style="font-size:15.5px;font-weight:700;color:#33302A">אזור השהייה בקוסמוי</span></div>
+    <div style="display:flex;align-items:center;gap:13px;padding:15px 0;border-bottom:1px solid rgba(51,48,42,.08)"><span style="width:24px;height:24px;border-radius:50%;background:#DE7E61;display:flex;align-items:center;justify-content:center;flex:none"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span style="font-size:15.5px;font-weight:700;color:#33302A">שפה מועדפת (עברית / אנגלית)</span></div>
+    <div style="display:flex;align-items:center;gap:13px;padding:15px 0;border-bottom:1px solid rgba(51,48,42,.08)"><span style="width:24px;height:24px;border-radius:50%;background:#DE7E61;display:flex;align-items:center;justify-content:center;flex:none"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span style="font-size:15.5px;font-weight:700;color:#33302A">סדר יום והרגלים חשובים</span></div>
+    <div style="display:flex;align-items:center;gap:13px;padding:15px 0;border-bottom:1px solid rgba(51,48,42,.08)"><span style="width:24px;height:24px;border-radius:50%;background:#DE7E61;display:flex;align-items:center;justify-content:center;flex:none"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span style="font-size:15.5px;font-weight:700;color:#33302A">רגישויות או צרכים מיוחדים</span></div>
+    <div style="display:flex;align-items:center;gap:13px;padding:15px 0"><span style="width:24px;height:24px;border-radius:50%;background:#DE7E61;display:flex;align-items:center;justify-content:center;flex:none"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span style="font-size:15.5px;font-weight:700;color:#33302A">האם נדרש ליווי לבריכה / ים</span></div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section style="position:relative;margin-top:-22px;padding:48px 22px 46px;background:#EAE0D0;border-radius:38px 38px 0 0">
+  <div data-reveal style="text-align:center;margin-bottom:26px">
+    <p style="margin:0 0 10px;font-size:11.5px;font-weight:700;letter-spacing:.14em;color:#5F6B50">עלויות</p>
+    <h2 style="margin:0 0 8px;font-family:'Frank Ruhl Libre',serif;font-weight:500;font-size:36px;line-height:1.1;color:#2E2A24">מחירים פשוטים<br>והוגנים</h2>
+    <p style="margin:0 auto;font-size:15px;line-height:1.6;color:#7a7165;max-width:34ch">המחיר נקבע לפי הנני והיקף ההזמנה — הכל שקוף, בלי הפתעות.</p>
+  </div>
+  <div data-reveal style="text-align:center;background:#5F6B50;border-radius:26px;padding:30px 22px;box-shadow:0 16px 32px rgba(95,107,80,.3);margin-bottom:14px">
+    <div style="font-size:13px;font-weight:700;letter-spacing:.04em;color:#C7D1B8;margin-bottom:8px">תעריף לשעה</div>
+    <div style="font-family:'Frank Ruhl Libre',serif;font-weight:600;color:#fff;line-height:1"><span style="font-size:52px">250–350</span> <span style="font-size:30px;color:#DCE5D2">฿</span></div>
+    <div style="font-size:13.5px;color:#C7D1B8;margin-top:8px">בהתאם לנני שתתאים לכם</div>
+  </div>
+  <div data-reveal style="background:#FFFDF9;border-radius:22px;padding:6px 20px;box-shadow:0 10px 24px rgba(95,75,45,.07)">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px 0;border-bottom:1px solid rgba(51,48,42,.08)"><span style="font-size:14.5px;font-weight:700;color:#33302A">עמלת תיווך והתאמה</span><span style="font-family:'Frank Ruhl Libre',serif;font-size:21px;font-weight:600;color:#B96B50">250 ₪</span></div>
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px 0;border-bottom:1px solid rgba(51,48,42,.08)"><span style="font-size:14.5px;font-weight:700;color:#33302A">מינימום הזמנה</span><span style="font-size:14.5px;font-weight:800;color:#5F6B50">5 שעות ביום</span></div>
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px 0;border-bottom:1px solid rgba(51,48,42,.08)"><span style="font-size:14.5px;font-weight:700;color:#33302A">יום עבודה ארוך</span><span style="font-size:14.5px;font-weight:800;color:#5F6B50">8 שעות</span></div>
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px 0"><span style="font-size:14.5px;font-weight:700;color:#33302A">הפסקת צהריים (ביום מלא)</span><span style="font-size:14.5px;font-weight:800;color:#5F6B50">30 דקות</span></div>
+  </div>
+  <p data-reveal style="margin:18px 4px 0;font-size:12.5px;line-height:1.5;color:#9a9082;text-align:center">לאחר מילוי הפרטים נשלח לכם הצעת מחיר אישית ומדויקת.</p>
+</section>
+
+<!-- ============ PAYMENT ============ -->
+<section style="position:relative;margin-top:-22px;padding:48px 22px 44px;background:#FFFDF9;border-radius:38px 38px 0 0">
+  <div data-reveal style="text-align:center;margin-bottom:28px">
+    <p style="margin:0 0 10px;font-size:11.5px;font-weight:700;letter-spacing:.14em;color:#5F6B50">אמצעי תשלום</p>
+    <h2 style="margin:0;font-family:'Frank Ruhl Libre',serif;font-weight:500;font-size:36px;line-height:1.1;color:#2E2A24">פשוט ובטוח</h2>
+  </div>
+  <div data-reveal style="display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-bottom:16px">
+    <div style="display:flex;flex-direction:column;align-items:center;gap:10px;background:#F3EDE2;border-radius:22px;padding:26px 16px">
+      <span style="width:48px;height:48px;border-radius:16px;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 16px rgba(95,75,45,.1)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#DE7E61" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2.5" width="14" height="19" rx="3"/><path d="M10 18.5h4"/></svg></span>
+      <span style="font-size:17px;font-weight:800;color:#33302A">ביט</span>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:10px;background:#F3EDE2;border-radius:22px;padding:26px 16px">
+      <span style="width:48px;height:48px;border-radius:16px;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 16px rgba(95,75,45,.1)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5F6B50" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="6" width="19" height="13" rx="3"/><path d="M2.5 10h19"/></svg></span>
+      <span style="font-size:17px;font-weight:800;color:#33302A">פייבוקס</span>
+    </div>
+  </div>
+  <div data-reveal style="display:flex;align-items:center;gap:12px;background:#DCE5D2;border-radius:20px;padding:16px 18px">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5F6B50" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><rect x="3" y="11" width="18" height="10" rx="2.5"/><path d="M7 11V8a5 5 0 0 1 10 0v3"/></svg>
+    <span style="font-size:14px;line-height:1.45;font-weight:700;color:#3C4733">השיבוץ מתבצע לאחר קבלת התשלום.</span>
+  </div>
+</section>
+
+<!-- ============ CANCELLATION ============ -->
+<section style="position:relative;margin-top:-22px;padding:48px 22px 44px;background:#F3EDE2;border-radius:38px 38px 0 0">
+  <div data-reveal style="text-align:center;margin-bottom:26px">
+    <p style="margin:0 0 10px;font-size:11.5px;font-weight:700;letter-spacing:.14em;color:#5F6B50">מדיניות ביטולים</p>
+    <h2 style="margin:0;font-family:'Frank Ruhl Libre',serif;font-weight:500;font-size:34px;line-height:1.1;color:#2E2A24">תוכניות משתנות —<br>וזה בסדר</h2>
+  </div>
+  <div data-reveal style="display:flex;flex-direction:column;gap:13px">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:14px;background:#FFFDF9;border-radius:22px;padding:20px 22px;box-shadow:0 10px 24px rgba(95,75,45,.07)">
+      <div><div style="font-size:15.5px;font-weight:800;color:#33302A">ביטול עד 48 שעות מראש</div><div style="font-size:13px;color:#8a8175;margin-top:2px">בלי דאגות, בלי עלות</div></div>
+      <span style="font-size:14.5px;font-weight:800;color:#5F8159;white-space:nowrap">החזר מלא</span>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:14px;background:#FFFDF9;border-radius:22px;padding:20px 22px;box-shadow:0 10px 24px rgba(95,75,45,.07)">
+      <div><div style="font-size:15.5px;font-weight:800;color:#33302A">ביטול בפחות מ־48 שעות</div><div style="font-size:13px;color:#8a8175;margin-top:2px">מתוך סכום ההזמנה</div></div>
+      <span style="font-size:14.5px;font-weight:800;color:#B96B50;white-space:nowrap">חיוב 50%</span>
+    </div>
+  </div>
+  <p data-reveal style="margin:16px 6px 0;font-size:13px;line-height:1.55;color:#9a9082;text-align:center">טיולים עם ילדים הם בלתי צפויים — תמיד ננסה לתאם איתכם מחדש כשאפשר.</p>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section id="contact" style="position:relative;margin-top:-22px;padding:0 0 4px;background:#5F6B50;border-radius:38px 38px 0 0;overflow:hidden">
+  <div data-reveal style="position:relative;height:230px">
+    <img src="assets/family.jpg" alt="משפחות וילדים שמחים משחקים על חוף בקוסמוי" style="display:block;width:100%;height:100%;object-fit:cover;object-position:50% 45%">
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(95,107,80,0) 38%,#5F6B50 100%)"></div>
+  </div>
+  <div data-reveal style="position:relative;padding:8px 26px 44px;text-align:center">
+    <h2 style="margin:0 0 14px;font-family:'Frank Ruhl Libre',serif;font-weight:500;font-size:42px;line-height:1.08;color:#FFFDF9">צאו ליהנות<br>מהחופשה.</h2>
+    <p style="margin:0 auto 28px;font-size:16.5px;line-height:1.6;color:#DDE3D2;max-width:32ch">שלחו לנו את הפרטים, ולאחר קבלתם נשלח אליכם את האפשרויות המתאימות ביותר.</p>
+    <a href="#contact" style="display:inline-flex;align-items:center;gap:10px;background:#DE7E61;color:#fff;text-decoration:none;font-weight:800;font-size:16.5px;padding:18px 34px;border-radius:40px;box-shadow:0 16px 34px rgba(0,0,0,.28);transition:transform .25s ease,background .25s ease" style-hover="background:#CE6E51;transform:translateY(-2px)">
+      להזמין נני
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+    </a>
+    <div style="display:flex;align-items:center;justify-content:center;gap:9px;margin-top:22px">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#DDE3D2" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.2-5.6A8.4 8.4 0 1 1 21 11.5z"/></svg>
+      <span style="font-size:14.5px;font-weight:700;color:#EFF2E9" dir="ltr">WhatsApp +66 00 000 0000</span>
+    </div>
+    <p style="margin:30px 0 0;font-size:12px;color:#A9B29C">Nanniland · קוֹ סמוּי, תאילנד · hello@nanniland.com</p>
+  </div>
+</section>
+
+<!-- ============ STICKY CTA ============ -->
+<sc-if value="{{ showStickyCta }}" hint-placeholder-val="{{ true }}">
+<div dir="rtl" style="position:fixed;left:50%;transform:translateX(-50%);bottom:0;width:100%;max-width:480px;z-index:50;padding:12px 16px 16px;background:linear-gradient(180deg,rgba(255,253,249,0),#FFFDF9 38%);pointer-events:none">
+  <a href="#contact" style="pointer-events:auto;display:flex;align-items:center;justify-content:center;gap:9px;background:#DE7E61;color:#fff;text-decoration:none;font-weight:800;font-size:16.5px;padding:16px;border-radius:36px;box-shadow:0 12px 28px rgba(222,126,97,.4);transition:background .25s ease" style-hover="background:#CE6E51">
+    להזמין נני
+    <span style="font-size:13px;font-weight:600;opacity:.85">· מענה מהיר</span>
+  </a>
+</div>
+</sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:440,&quot;height&quot;:900},&quot;showStickyCta&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;התנהגות&quot;},&quot;showTrustStats&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;תוכן&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      showStickyCta: this.props.showStickyCta ?? true,
+      showTrustStats: this.props.showTrustStats ?? true,
+    };
+  }
+  // All content is visible by default in the template (no JS-gated entrance):
+  // the preview environment pauses CSS animations, so we never hide content
+  // behind an animation that might not run.
+}
+</script>
+</body>
+</html>
