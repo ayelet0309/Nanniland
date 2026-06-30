@@ -3,9 +3,8 @@ import CTAButton from "./CTAButton";
 const priceItems = [
   "250–350 באט לשעה, בהתאם לנני",
   "עמלת תיווך והתאמה: 250₪",
-  "מינימום הזמנה: 5 שעות ביום",
-  "יום עבודה ארוך: 8 שעות",
-  "ביום של 8 שעות תינתן הפסקה של 30 דקות לארוחת צהריים",
+  "מינימום הזמנה: 8 שעות ביום",
+  "(תינתן לנני הפסקת אוכל של חצי שעה)",
 ];
 
 type PricingProps = {
@@ -16,7 +15,7 @@ type PricingProps = {
 
 export default function Pricing({
   ctaHref,
-  ctaLabel = "להרשמה",
+  ctaLabel = "הזמנת נני",
   ctaSubtitle,
 }: PricingProps) {
   return (
