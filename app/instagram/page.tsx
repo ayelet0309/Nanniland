@@ -21,18 +21,17 @@ export default function InstagramPage() {
       <MatchingChecklist
         imageSrc="/images/instagram-matching.jpg"
         imageAlt="נני מטפלת בתינוק על חוף הים בקוסמוי"
-        debugLabel="instagram-matching.jpg"
       />
       <Pricing
         ctaHref={INSTAGRAM_CTA_URL}
-        ctaLabel="NANNILAND"
-        ctaSubtitle="להרשמה"
+        ctaLabel="🌴 NANNILAND"
+        ctaSubtitle="הזמנת נני"
       />
       <PaymentAndPolicy />
       <FinalCTA
         ctaHref={INSTAGRAM_CTA_URL}
-        ctaLabel="NANNILAND"
-        ctaSubtitle="להרשמה"
+        ctaLabel="🌴 NANNILAND"
+        ctaSubtitle="הזמנת נני"
       />
       <Footer />
     </main>

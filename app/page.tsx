@@ -15,7 +15,7 @@ export default function Home() {
     <main>
       <Hero />
       <Highlights />
-      <MatchingChecklist />
+      <MatchingChecklist imageSrc="/images/instagram-matching.jpg" />
       <SpecialSection />
       <SuccessSection />
       <HowItWorks />
