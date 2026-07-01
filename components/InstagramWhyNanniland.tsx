@@ -1,96 +1,105 @@
-const CARD_BASE: React.CSSProperties = {
+const CARD: React.CSSProperties = {
   background: "#FFFDF9",
-  borderRadius: "24px",
-  padding: "22px 18px",
-  boxShadow: "0 10px 26px rgba(95,75,45,.07)",
+  border: "1px solid rgba(95,75,45,.06)",
+  borderRadius: "20px",
+  padding: "18px 17px",
+  boxShadow: "0 8px 22px rgba(95,75,45,.06)",
 };
 
-const ICON_BLUSH: React.CSSProperties = {
-  width: "42px", height: "42px", borderRadius: "14px",
-  background: "#EFE0D9", display: "flex",
-  alignItems: "center", justifyContent: "center", marginBottom: "14px",
+const BADGE_BLUSH: React.CSSProperties = {
+  display: "flex", alignItems: "center", justifyContent: "center",
+  width: "38px", height: "38px", borderRadius: "12px",
+  background: "#F6E4DD", fontSize: "19px", lineHeight: 1, marginBottom: "12px",
 };
-const ICON_SAGE: React.CSSProperties = {
-  width: "42px", height: "42px", borderRadius: "14px",
-  background: "#DCE5D2", display: "flex",
-  alignItems: "center", justifyContent: "center", marginBottom: "14px",
+const BADGE_SAGE: React.CSSProperties = {
+  ...BADGE_BLUSH,
+  background: "#E0E8D5",
 };
+
+const H3: React.CSSProperties = { margin: "0 0 6px", fontSize: "16px", fontWeight: 800, color: "#33302A" };
+const BODY: React.CSSProperties = { margin: 0, fontSize: "14px", lineHeight: 1.6, color: "#7a7165" };
+
+function Check() {
+  return (
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#5F8159" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" style={{ flex: "none" }}>
+      <path d="M20 6 9 17l-5-5" />
+    </svg>
+  );
+}
+
+const SAFETY = ["ראיון אישי", "בדיקת מסמכים", "הכשרות מקצועיות", "סינון קפדני"];
+const MORE_CHIPS = ["ביטחון", "משחק", "חום", "אהבה"];
 
 export default function InstagramWhyNanniland() {
   return (
     <section
       style={{
-        position: "relative", marginTop: "-22px",
-        padding: "48px 22px 46px",
+        position: "relative",
+        marginTop: "-18px",
+        padding: "50px 22px 46px",
         background: "#F3EDE2",
         borderRadius: "38px 38px 0 0",
       }}
     >
       <div style={{ textAlign: "center", marginBottom: "30px" }}>
-        <p
-          style={{
-            margin: "0 0 10px", fontSize: "11.5px", fontWeight: 700,
-            letterSpacing: "0.14em", color: "#5F6B50",
-          }}
-        >
-          למה ננילנד
-        </p>
         <h2
           style={{
-            margin: 0,
-            fontFamily: "'Frank Ruhl Libre', serif", fontWeight: 500,
-            fontSize: "36px", lineHeight: 1.1, color: "#2E2A24",
+            margin: "0 0 14px",
+            fontFamily: "'Frank Ruhl Libre', serif",
+            fontWeight: 500,
+            fontSize: "40px",
+            lineHeight: 1.05,
+            color: "#2E2A24",
           }}
         >
-          טיפול שמרגיש<br />כמו משפחה
+          למה <span dir="ltr">Nanniland</span>?
         </h2>
+        <p style={{ margin: "0 auto", fontSize: "16.5px", lineHeight: 1.6, color: "#8a7d6e", maxWidth: "26ch" }}>
+          כי כשמדובר בילדים שלכם —<br />אין מקום לפשרות.
+        </p>
       </div>
 
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "13px" }}>
-        {/* בקוסמוי בלבד */}
-        <div style={CARD_BASE}>
-          <span style={ICON_BLUSH}>
-            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#B96B50" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M12 21s-6-5.7-6-10a6 6 0 0 1 12 0c0 4.3-6 10-6 10z"/>
-              <circle cx="12" cy="11" r="2.2"/>
-            </svg>
-          </span>
-          <h3 style={{ margin: "0 0 5px", fontSize: "16.5px", fontWeight: 800, color: "#33302A" }}>בקוסמוי בלבד</h3>
-          <p style={{ margin: 0, fontSize: "14px", lineHeight: 1.5, color: "#7a7165" }}>השירות ניתן באי קוֹ סמוּי.</p>
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px", gridAutoRows: "1fr" }}>
+        {/* אהבה אמיתית */}
+        <div style={CARD}>
+          <span style={BADGE_BLUSH}>❤️</span>
+          <h3 style={H3}>אהבה אמיתית לילדים</h3>
+          <p style={BODY}>לא רק ניסיון — חום, סבלנות ויכולת ליצור חיבור אמיתי לילדים.</p>
         </div>
 
-        {/* מגיעות עד אליכם */}
-        <div style={CARD_BASE}>
-          <span style={ICON_SAGE}>
-            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#5F6B50" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M4 11 12 4l8 7"/>
-              <path d="M6 10v9h12v-9"/>
-            </svg>
-          </span>
-          <h3 style={{ margin: "0 0 5px", fontSize: "16.5px", fontWeight: 800, color: "#33302A" }}>מגיעות עד אליכם</h3>
-          <p style={{ margin: 0, fontSize: "14px", lineHeight: 1.5, color: "#7a7165" }}>לוילה או למלון שבו אתם שוהים.</p>
+        {/* בטיחות */}
+        <div style={CARD}>
+          <span style={BADGE_SAGE}>🛡️</span>
+          <h3 style={{ ...H3, marginBottom: "8px" }}>בטיחות מעל הכול</h3>
+          <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
+            {SAFETY.map((item) => (
+              <span key={item} style={{ display: "flex", alignItems: "center", gap: "7px", fontSize: "13.5px", fontWeight: 600, color: "#5b5347" }}>
+                <Check />
+                {item}
+              </span>
+            ))}
+          </div>
         </div>
 
-        {/* תינוקות וילדים */}
-        <div style={CARD_BASE}>
-          <span style={ICON_SAGE}>
-            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#5F6B50" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M12 21s-7-4.6-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.4-7 10-7 10z"/>
-            </svg>
-          </span>
-          <h3 style={{ margin: "0 0 5px", fontSize: "16.5px", fontWeight: 800, color: "#33302A" }}>תינוקות וילדים</h3>
-          <p style={{ margin: 0, fontSize: "14px", lineHeight: 1.5, color: "#7a7165" }}>השירות מתאים לכל הגילאים.</p>
+        {/* אמינות */}
+        <div style={CARD}>
+          <span style={BADGE_BLUSH}>🤍</span>
+          <h3 style={H3}>אמינות ושקיפות</h3>
+          <p style={BODY}>חשוב לנו שתדעו בדיוק מי מגיע למשפחה שלכם — ואנחנו מלווים אתכם לאורך כל הדרך.</p>
         </div>
 
-        {/* לכל מצב */}
-        <div style={CARD_BASE}>
-          <span style={ICON_BLUSH}>
-            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#B96B50" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-              <path d="m12 3 2.1 4.6 5 .5-3.8 3.4 1.1 5L12 13.9 7.6 16.5l1.1-5L4.9 8.1l5-.5z"/>
-            </svg>
-          </span>
-          <h3 style={{ margin: "0 0 5px", fontSize: "16.5px", fontWeight: 800, color: "#33302A" }}>לכל מצב</h3>
-          <p style={{ margin: 0, fontSize: "14px", lineHeight: 1.5, color: "#7a7165" }}>חופשה משפחתית, זמן זוגי או ליווי ביום ובערב.</p>
+        {/* יותר מנני */}
+        <div style={CARD}>
+          <span style={BADGE_SAGE}>🌴</span>
+          <h3 style={{ ...H3, marginBottom: "8px" }}>הרבה יותר מנני</h3>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "6px", marginBottom: "9px" }}>
+            {MORE_CHIPS.map((chip) => (
+              <span key={chip} style={{ fontSize: "12.5px", fontWeight: 700, color: "#5F6B50", background: "#EEF1E7", borderRadius: "20px", padding: "4px 11px" }}>
+                {chip}
+              </span>
+            ))}
+          </div>
+          <p style={{ ...BODY, fontSize: "13.5px" }}>ומאפשרת להורים ליהנות באמת מהחופשה.</p>
         </div>
       </div>
     </section>

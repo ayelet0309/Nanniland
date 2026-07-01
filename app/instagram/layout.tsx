@@ -24,7 +24,7 @@ export default function InstagramLayout({
           overflowX: "hidden",
           paddingBottom: "96px",
           position: "relative",
-          fontFamily: "'Frank Ruhl Libre', serif",
+          fontFamily: "'Heebo', system-ui, sans-serif",
         }}
       >
         {children}

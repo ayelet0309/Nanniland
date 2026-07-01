@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import InstagramHero from "@/components/InstagramHero";
 import InstagramWhyNanniland from "@/components/InstagramWhyNanniland";
+import InstagramMatchingGuarantee from "@/components/InstagramMatchingGuarantee";
+import InstagramOurGoal from "@/components/InstagramOurGoal";
 import InstagramInfoNeeded from "@/components/InstagramInfoNeeded";
 import InstagramPricing from "@/components/InstagramPricing";
 import InstagramPayment from "@/components/InstagramPayment";
@@ -19,6 +21,8 @@ export default function InstagramPage() {
     <main>
       <InstagramHero />
       <InstagramWhyNanniland />
+      <InstagramMatchingGuarantee />
+      <InstagramOurGoal />
       <InstagramInfoNeeded />
       <InstagramPricing />
       <InstagramPayment />
