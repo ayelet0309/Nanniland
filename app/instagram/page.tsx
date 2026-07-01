@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import InstagramHero from "@/components/InstagramHero";
-import Highlights from "@/components/Highlights";
+import InstagramWhyNanniland from "@/components/InstagramWhyNanniland";
 import MatchingChecklist from "@/components/MatchingChecklist";
 import Pricing from "@/components/Pricing";
 import PaymentAndPolicy from "@/components/PaymentAndPolicy";
@@ -17,7 +17,7 @@ export default function InstagramPage() {
   return (
     <main>
       <InstagramHero />
-      <Highlights />
+      <InstagramWhyNanniland />
       <MatchingChecklist
         imageSrc="/images/instagram-matching.jpg"
         imageAlt="נני מטפלת בתינוק על חוף הים בקוסמוי"
