@@ -1,49 +1,216 @@
 import Image from "next/image";
-import CTAButton from "./CTAButton";
 import { INSTAGRAM_CTA_URL } from "@/lib/constants";
 
 export default function InstagramHero() {
   return (
     <section
-      aria-labelledby="instagram-hero-heading"
-      className="relative overflow-hidden bg-gradient-to-b from-blush via-cream to-cream"
+      style={{ position: "relative", padding: "30px 24px 44px", overflow: "hidden" }}
     >
-      <div className="relative mx-auto flex max-w-md flex-col items-center px-6 pb-14 pt-14 text-center sm:max-w-lg sm:pb-20 sm:pt-20">
-        <div className="relative h-28 w-28 overflow-hidden rounded-full shadow-soft ring-4 ring-white sm:h-32 sm:w-32">
-          <Image
-            src="/images/instagram-hero.jpg"
-            alt="ילדים ומשפחה נהנים על חוף ים בקוסמוי"
-            fill
-            priority
-            sizes="128px"
-            className="object-cover"
-          />
-        </div>
+      <style>{`
+        @keyframes nlfloat {
+          0%,100%{transform:translate(0,0) rotate(0deg)}
+          50%{transform:translate(0,-22px) rotate(6deg)}
+        }
+        .nl-b1{animation:nlfloat 16s ease-in-out infinite}
+        .nl-b2{animation:nlfloat 19s ease-in-out infinite reverse}
+      `}</style>
 
-        <h1
-          id="instagram-hero-heading"
-          className="mt-7 text-3xl font-extrabold leading-tight text-ink sm:text-4xl"
+      {/* Blobs */}
+      <div
+        className="nl-b1"
+        style={{
+          position: "absolute", top: "-70px", left: "-90px",
+          width: "260px", height: "260px",
+          borderRadius: "48% 52% 58% 42% / 55% 45% 55% 45%",
+          background: "radial-gradient(circle at 35% 35%,#F4D9CF,#EBC8BC)",
+          filter: "blur(6px)", opacity: 0.55, zIndex: 0,
+        }}
+      />
+      <div
+        className="nl-b2"
+        style={{
+          position: "absolute", top: "120px", right: "-70px",
+          width: "200px", height: "200px",
+          borderRadius: "54% 46% 42% 58% / 48% 56% 44% 52%",
+          background: "radial-gradient(circle at 40% 40%,#DCE5D2,#C9D6BB)",
+          filter: "blur(6px)", opacity: 0.5, zIndex: 0,
+        }}
+      />
+
+      {/* Header */}
+      <header
+        style={{
+          position: "relative", zIndex: 2,
+          display: "flex", alignItems: "center", justifyContent: "space-between",
+          marginBottom: "42px",
+        }}
+      >
+        <div style={{ display: "flex", alignItems: "center", gap: "9px" }}>
+          <span
+            style={{
+              width: "34px", height: "34px", borderRadius: "50%",
+              background: "#5F6B50", display: "flex", alignItems: "center",
+              justifyContent: "center", flexShrink: 0,
+            }}
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFDF9" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M12 21s-7-4.6-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.4-7 10-7 10z"/>
+            </svg>
+          </span>
+          <span
+            style={{
+              fontFamily: "'Frank Ruhl Libre', serif", fontSize: "23px",
+              fontWeight: 600, letterSpacing: "0.01em", color: "#33302A",
+            }}
+          >
+            Nanniland
+          </span>
+        </div>
+        <a
+          href={INSTAGRAM_CTA_URL}
+          style={{ fontSize: "13.5px", fontWeight: 700, color: "#5F6B50", textDecoration: "none", whiteSpace: "nowrap" }}
         >
-          תהנו מהחופשה.
-          <br />
-          אנחנו כאן בשבילכם 💛
-        </h1>
+          צור קשר
+        </a>
+      </header>
 
-        <p className="mt-5 max-w-sm text-lg leading-relaxed text-ink-light sm:text-xl">
-          שירותי נני מקצועיות, חמות ואוהבות לילדים בקוסמוי — בהתאמה אישית
-          למשפחה שלכם.
+      {/* Hero text */}
+      <div style={{ position: "relative", zIndex: 2 }}>
+        <p
+          style={{
+            margin: "0 0 14px", fontSize: "11.5px", fontWeight: 700,
+            letterSpacing: "0.1em", color: "#5F6B50",
+          }}
+        >
+          ברוכים הבאים ל־Nanniland · קוֹ סמוּי
         </p>
+        <h1
+          style={{
+            margin: "0 0 18px",
+            fontFamily: "'Frank Ruhl Libre', serif", fontWeight: 500,
+            fontSize: "50px", lineHeight: 1.05, letterSpacing: "-0.01em",
+            color: "#2E2A24",
+          }}
+        >
+          תירגעו.<br />
+          אנחנו כאן בשביל<br />
+          <span style={{ color: "#B96B50" }}>הקטנטנים.</span>
+        </h1>
+        <p
+          style={{
+            margin: "0 0 26px", fontSize: "17px", lineHeight: 1.6,
+            color: "#6E6559", maxWidth: "33ch",
+          }}
+        >
+          נניות מקצועיות, חמות ואוהבות ילדים — שיהפכו את החופשה שלכם בקוסמוי לחוויה
+          רגועה ונעימה, מותאמת בדיוק לצרכים שלכם.
+        </p>
+        <a
+          href={INSTAGRAM_CTA_URL}
+          style={{
+            display: "inline-flex", alignItems: "center", gap: "10px",
+            background: "#DE7E61", color: "#fff", textDecoration: "none",
+            fontWeight: 800, fontSize: "16.5px", padding: "17px 30px",
+            borderRadius: "40px", boxShadow: "0 14px 30px rgba(222,126,97,.34)",
+          }}
+        >
+          🌴 NANNILAND
+          <span style={{ fontSize: "13px", fontWeight: 600, opacity: 0.9 }}>הזמנת נני</span>
+        </a>
+      </div>
 
-        <div className="mt-8">
-          <CTAButton
-            label="🌴 NANNILAND"
-            subtitle="הזמנת נני"
-            href={INSTAGRAM_CTA_URL}
-          />
+      {/* Hero image */}
+      <div
+        style={{
+          position: "relative", zIndex: 2, marginTop: "34px",
+          borderRadius: "30px", overflow: "hidden",
+          boxShadow: "0 26px 50px rgba(95,75,45,.2)",
+        }}
+      >
+        <Image
+          src="/images/hero2-wide.jpg"
+          alt="נני אוהבת מחזיקה תינוק במלון נופש בקוסמוי"
+          width={800}
+          height={500}
+          style={{ display: "block", width: "100%", height: "auto" }}
+          priority
+        />
+        <div
+          style={{
+            position: "absolute", right: "16px", bottom: "16px", left: "16px",
+            display: "flex", alignItems: "center", gap: "10px",
+            background: "rgba(255,253,249,.92)", backdropFilter: "blur(8px)",
+            borderRadius: "18px", padding: "12px 15px",
+          }}
+        >
+          <span
+            style={{
+              width: "30px", height: "30px", borderRadius: "50%",
+              background: "#DCE5D2", display: "flex",
+              alignItems: "center", justifyContent: "center", flexShrink: 0,
+            }}
+          >
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#5F6B50" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M20 6 9 17l-5-5"/>
+            </svg>
+          </span>
+          <span
+            style={{ fontSize: "13.5px", fontWeight: 700, color: "#3C4733", lineHeight: 1.3 }}
+          >
+            נניות מקצועיות שאוהבות ילדים
+          </span>
         </div>
+      </div>
 
-        <div className="absolute -bottom-8 -right-10 hidden h-32 w-32 rounded-full bg-sage/30 blur-2xl sm:block" />
-        <div className="absolute -left-10 -top-10 hidden h-32 w-32 rounded-full bg-gold/20 blur-2xl sm:block" />
+      {/* Trust stats */}
+      <div
+        style={{
+          display: "flex", justifyContent: "space-between",
+          gap: "8px", marginTop: "26px", textAlign: "center",
+        }}
+      >
+        <div style={{ flex: 1 }}>
+          <div
+            style={{
+              fontFamily: "'Frank Ruhl Libre', serif", fontSize: "28px",
+              fontWeight: 600, color: "#B96B50", lineHeight: 1.1,
+            }}
+          >
+            5 שע׳
+          </div>
+          <div style={{ fontSize: "12px", fontWeight: 700, color: "#8a8175", marginTop: "5px" }}>
+            מינימום הזמנה
+          </div>
+        </div>
+        <div style={{ width: "1px", background: "rgba(51,48,42,.12)" }} />
+        <div style={{ flex: 1 }}>
+          <div
+            style={{
+              fontFamily: "'Frank Ruhl Libre', serif", fontSize: "28px",
+              fontWeight: 600, color: "#B96B50", lineHeight: 1.1,
+            }}
+          >
+            עב · אנ
+          </div>
+          <div style={{ fontSize: "12px", fontWeight: 700, color: "#8a8175", marginTop: "5px" }}>
+            שפות
+          </div>
+        </div>
+        <div style={{ width: "1px", background: "rgba(51,48,42,.12)" }} />
+        <div style={{ flex: 1 }}>
+          <div
+            dir="ltr"
+            style={{
+              fontFamily: "'Frank Ruhl Libre', serif", fontSize: "28px",
+              fontWeight: 600, color: "#B96B50", lineHeight: 1.1,
+            }}
+          >
+            100%
+          </div>
+          <div style={{ fontSize: "12px", fontWeight: 700, color: "#8a8175", marginTop: "5px" }}>
+            מותאם אישית
+          </div>
+        </div>
       </div>
     </section>
   );
