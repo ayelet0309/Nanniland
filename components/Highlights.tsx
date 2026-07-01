@@ -1,19 +1,33 @@
-const highlights = [
+const cards = [
   {
-    icon: "📍",
-    text: "השירות ניתן בקוסמוי בלבד",
+    icon: "❤️",
+    title: "אהבה אמיתית לילדים",
+    intro: "לא רק ניסיון.",
+    subtitle: "אנחנו מחפשים נניות עם:",
+    items: ["• חום", "• סבלנות", "• הקשבה", "• חיבור אמיתי לילדים"],
   },
   {
-    icon: "🏡",
-    text: "הנניות מגיעות עד אליכם — לוילה או למלון",
+    icon: "🛡️",
+    title: "בטיחות מעל הכול",
+    subtitle: "כל נני עוברת:",
+    items: [
+      "✔ ראיון אישי",
+      "✔ בדיקת מסמכים",
+      "✔ הכשרות",
+      "✔ תהליך סינון קפדני",
+    ],
   },
   {
-    icon: "👶",
-    text: "השירות מתאים לתינוקות וילדים",
+    icon: "🤍",
+    title: "אמינות ושקיפות",
+    body: "תדעו בדיוק מי מגיע אליכם.\nאנחנו מלווים אתכם לאורך כל הדרך.",
   },
   {
-    icon: "✨",
-    text: "מתאים לחופשות משפחתיות, זמן זוגי להורים או ליווי במהלך היום והערב",
+    icon: "🌴",
+    title: "הרבה יותר מנני",
+    intro: "נני טובה היא הרבה יותר ממטפלת. היא מעניקה:",
+    items: ["🤍 ביטחון", "🤍 משחק", "🤍 אהבה", "🤍 חום"],
+    footer: "ומאפשרת להורים ליהנות באמת מהחופשה.",
   },
 ];
 
@@ -25,23 +39,55 @@ export default function Highlights() {
           id="highlights-heading"
           className="text-center text-2xl font-bold text-ink sm:text-3xl"
         >
-          למה Nanniland
+          למה Nanniland?
         </h2>
-        <ul className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {highlights.map((item) => (
-            <li
-              key={item.text}
-              className="flex flex-col items-center gap-4 rounded-3xl bg-white/80 p-7 text-center shadow-card ring-1 ring-beige/60 transition-transform duration-200 hover:-translate-y-1"
+        <p className="mx-auto mt-3 max-w-md text-center text-base leading-relaxed text-ink-light sm:text-lg">
+          כי כשמדובר בילדים שלכם —<br />אין מקום לפשרות.
+        </p>
+
+        <div className="mt-10 grid gap-5 sm:grid-cols-2">
+          {cards.map((card) => (
+            <div
+              key={card.title}
+              className="flex flex-col gap-3 rounded-3xl bg-white/80 p-7 shadow-card ring-1 ring-beige/60 transition-transform duration-200 hover:-translate-y-1 sm:p-8"
             >
               <span aria-hidden="true" className="text-4xl">
-                {item.icon}
+                {card.icon}
               </span>
-              <p className="text-base font-medium leading-relaxed text-ink">
-                {item.text}
-              </p>
-            </li>
+              <h3 className="text-lg font-bold text-ink">{card.title}</h3>
+
+              {"intro" in card && card.intro && (
+                <p className="text-sm leading-relaxed text-ink-light">{card.intro}</p>
+              )}
+
+              {"subtitle" in card && card.subtitle && (
+                <p className="text-sm font-medium text-ink">{card.subtitle}</p>
+              )}
+
+              {"items" in card && card.items && (
+                <ul className="space-y-1">
+                  {card.items.map((item) => (
+                    <li key={item} className="text-sm leading-relaxed text-ink">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              )}
+
+              {"body" in card && card.body && (
+                <p className="whitespace-pre-line text-sm leading-relaxed text-ink-light">
+                  {card.body}
+                </p>
+              )}
+
+              {"footer" in card && card.footer && (
+                <p className="mt-auto text-sm leading-relaxed text-ink-light">
+                  {card.footer}
+                </p>
+              )}
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
     </section>
   );

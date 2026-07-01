@@ -20,11 +20,6 @@ export default function InstagramHero() {
           />
         </div>
 
-        {/* TEMP DEBUG LABEL — remove after image verification */}
-        <p className="mt-2 font-mono text-[11px] text-ink-light/60">
-          instagram-hero.jpg
-        </p>
-
         <h1
           id="instagram-hero-heading"
           className="mt-7 text-3xl font-extrabold leading-tight text-ink sm:text-4xl"
@@ -41,8 +36,8 @@ export default function InstagramHero() {
 
         <div className="mt-8">
           <CTAButton
-            label="NANNILAND"
-            subtitle="להרשמה"
+            label="🌴 NANNILAND"
+            subtitle="הזמנת נני"
             href={INSTAGRAM_CTA_URL}
           />
         </div>

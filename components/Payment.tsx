@@ -1,4 +1,4 @@
-const methods = ["ביט", "פייבוקס"];
+const methods = ["ביט"];
 
 export default function Payment() {
   return (

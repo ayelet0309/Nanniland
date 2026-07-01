@@ -9,7 +9,7 @@ type FinalCTAProps = {
 
 export default function FinalCTA({
   ctaHref,
-  ctaLabel = "אני רוצה להירשם",
+  ctaLabel = "הזמנת נני",
   ctaSubtitle,
 }: FinalCTAProps) {
   return (
