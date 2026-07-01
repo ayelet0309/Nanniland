@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import InstagramHero from "@/components/InstagramHero";
 import InstagramWhyNanniland from "@/components/InstagramWhyNanniland";
-import MatchingChecklist from "@/components/MatchingChecklist";
-import Pricing from "@/components/Pricing";
-import PaymentAndPolicy from "@/components/PaymentAndPolicy";
-import FinalCTA from "@/components/FinalCTA";
-import Footer from "@/components/Footer";
-import { INSTAGRAM_CTA_URL, SITE_DESCRIPTION, SITE_TITLE } from "@/lib/constants";
+import InstagramInfoNeeded from "@/components/InstagramInfoNeeded";
+import InstagramPricing from "@/components/InstagramPricing";
+import InstagramPayment from "@/components/InstagramPayment";
+import InstagramCancellation from "@/components/InstagramCancellation";
+import InstagramFinalCTA from "@/components/InstagramFinalCTA";
+import InstagramStickyCTA from "@/components/InstagramStickyCTA";
+import { SITE_DESCRIPTION, SITE_TITLE } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: SITE_TITLE,
@@ -18,22 +19,12 @@ export default function InstagramPage() {
     <main>
       <InstagramHero />
       <InstagramWhyNanniland />
-      <MatchingChecklist
-        imageSrc="/images/instagram-matching.jpg"
-        imageAlt="נני מטפלת בתינוק על חוף הים בקוסמוי"
-      />
-      <Pricing
-        ctaHref={INSTAGRAM_CTA_URL}
-        ctaLabel="🌴 NANNILAND"
-        ctaSubtitle="הזמנת נני"
-      />
-      <PaymentAndPolicy />
-      <FinalCTA
-        ctaHref={INSTAGRAM_CTA_URL}
-        ctaLabel="🌴 NANNILAND"
-        ctaSubtitle="הזמנת נני"
-      />
-      <Footer />
+      <InstagramInfoNeeded />
+      <InstagramPricing />
+      <InstagramPayment />
+      <InstagramCancellation />
+      <InstagramFinalCTA />
+      <InstagramStickyCTA />
     </main>
   );
 }

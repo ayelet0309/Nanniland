@@ -1,182 +1,98 @@
-const safetyChecks = ["ראיון אישי", "בדיקת מסמכים", "הכשרות", "סינון קפדני"];
-const heartChips = ["🤍 ביטחון", "🤍 משחק", "🤍 חום", "🤍 אהבה"];
-const goalChips = [
-  "🤍 הילדים מרגישים בטוחים",
-  "🤍 ההורים יכולים להירגע",
-  "🤍 הנני מגיעה עם חיוך",
-];
+const CARD_BASE: React.CSSProperties = {
+  background: "#FFFDF9",
+  borderRadius: "24px",
+  padding: "22px 18px",
+  boxShadow: "0 10px 26px rgba(95,75,45,.07)",
+};
+
+const ICON_BLUSH: React.CSSProperties = {
+  width: "42px", height: "42px", borderRadius: "14px",
+  background: "#EFE0D9", display: "flex",
+  alignItems: "center", justifyContent: "center", marginBottom: "14px",
+};
+const ICON_SAGE: React.CSSProperties = {
+  width: "42px", height: "42px", borderRadius: "14px",
+  background: "#DCE5D2", display: "flex",
+  alignItems: "center", justifyContent: "center", marginBottom: "14px",
+};
 
 export default function InstagramWhyNanniland() {
   return (
-    <>
-      {/* ── Section A: Compact 2×2 cards ── */}
-      <section aria-labelledby="insta-why-heading" className="section-padding">
-        <div className="mx-auto max-w-2xl">
-          <div className="text-center">
-            <h2
-              id="insta-why-heading"
-              className="text-2xl font-bold text-ink sm:text-3xl"
-            >
-              למה Nanniland?
-            </h2>
-            <p className="mt-2 text-base leading-relaxed text-ink-light sm:text-lg">
-              כי כשמדובר בילדים שלכם —<br />אין מקום לפשרות.
-            </p>
-          </div>
+    <section
+      style={{
+        position: "relative", marginTop: "-22px",
+        padding: "48px 22px 46px",
+        background: "#F3EDE2",
+        borderRadius: "38px 38px 0 0",
+      }}
+    >
+      <div style={{ textAlign: "center", marginBottom: "30px" }}>
+        <p
+          style={{
+            margin: "0 0 10px", fontSize: "11.5px", fontWeight: 700,
+            letterSpacing: "0.14em", color: "#5F6B50",
+          }}
+        >
+          למה ננילנד
+        </p>
+        <h2
+          style={{
+            margin: 0,
+            fontFamily: "'Frank Ruhl Libre', serif", fontWeight: 500,
+            fontSize: "36px", lineHeight: 1.1, color: "#2E2A24",
+          }}
+        >
+          טיפול שמרגיש<br />כמו משפחה
+        </h2>
+      </div>
 
-          <div className="mt-8 grid grid-cols-2 gap-3 sm:gap-4">
-            {/* Card 1 — Love */}
-            <div className="flex flex-col gap-2 rounded-2xl bg-blush/40 p-4 ring-1 ring-beige/40 sm:p-5">
-              <span aria-hidden="true" className="text-3xl leading-none">❤️</span>
-              <h3 className="text-sm font-bold leading-snug text-ink sm:text-base">
-                אהבה אמיתית לילדים
-              </h3>
-              <p className="text-xs leading-relaxed text-ink-light sm:text-sm">
-                לא רק ניסיון.<br />
-                חום, סבלנות, ויכולת ליצור חיבור אמיתי לילדים.
-              </p>
-            </div>
-
-            {/* Card 2 — Safety */}
-            <div className="flex flex-col gap-2 rounded-2xl bg-sage/20 p-4 ring-1 ring-beige/40 sm:p-5">
-              <span aria-hidden="true" className="text-3xl leading-none">🛡️</span>
-              <h3 className="text-sm font-bold leading-snug text-ink sm:text-base">
-                בטיחות מעל הכול
-              </h3>
-              <p className="text-xs font-medium text-ink sm:text-sm">כל נני עוברת:</p>
-              <ul className="space-y-0.5">
-                {safetyChecks.map((item) => (
-                  <li
-                    key={item}
-                    className="flex items-center gap-1.5 text-xs leading-relaxed text-ink-light sm:text-sm"
-                  >
-                    <span className="text-sage-dark font-medium">✔</span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Card 3 — Transparency */}
-            <div className="flex flex-col gap-2 rounded-2xl bg-white/80 p-4 ring-1 ring-beige/40 sm:p-5">
-              <span aria-hidden="true" className="text-3xl leading-none">🤍</span>
-              <h3 className="text-sm font-bold leading-snug text-ink sm:text-base">
-                אמינות ושקיפות
-              </h3>
-              <p className="text-xs leading-relaxed text-ink-light sm:text-sm">
-                חשוב לנו שתדעו בדיוק מי מגיע למשפחה שלכם.<br />
-                אנחנו מלווים אתכם לאורך כל הדרך.
-              </p>
-            </div>
-
-            {/* Card 4 — More than a nanny */}
-            <div className="flex flex-col gap-2 rounded-2xl bg-gold/10 p-4 ring-1 ring-beige/40 sm:p-5">
-              <span aria-hidden="true" className="text-3xl leading-none">🌴</span>
-              <h3 className="text-sm font-bold leading-snug text-ink sm:text-base">
-                הרבה יותר מנני
-              </h3>
-              <p className="text-xs text-ink-light sm:text-sm">נני טובה מעניקה:</p>
-              <div className="flex flex-wrap gap-1">
-                {heartChips.map((chip) => (
-                  <span
-                    key={chip}
-                    className="rounded-full bg-white/70 px-2 py-0.5 text-xs text-ink"
-                  >
-                    {chip}
-                  </span>
-                ))}
-              </div>
-              <p className="text-xs leading-relaxed text-ink-light sm:text-sm">
-                ומאפשרת להורים ליהנות באמת מהחופשה.
-              </p>
-            </div>
-          </div>
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "13px" }}>
+        {/* בקוסמוי בלבד */}
+        <div style={CARD_BASE}>
+          <span style={ICON_BLUSH}>
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#B96B50" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M12 21s-6-5.7-6-10a6 6 0 0 1 12 0c0 4.3-6 10-6 10z"/>
+              <circle cx="12" cy="11" r="2.2"/>
+            </svg>
+          </span>
+          <h3 style={{ margin: "0 0 5px", fontSize: "16.5px", fontWeight: 800, color: "#33302A" }}>בקוסמוי בלבד</h3>
+          <p style={{ margin: 0, fontSize: "14px", lineHeight: 1.5, color: "#7a7165" }}>השירות ניתן באי קוֹ סמוּי.</p>
         </div>
-      </section>
 
-      {/* ── Section B: No-connection guarantee (blush) ── */}
-      <section
-        aria-labelledby="insta-noconnect-heading"
-        className="section-padding bg-blush/30"
-      >
-        <div className="mx-auto max-w-lg text-center">
-          <h2
-            id="insta-noconnect-heading"
-            className="text-xl font-bold text-ink sm:text-2xl"
-          >
-            💛 מה קורה כשאין חיבור?
-          </h2>
-
-          <div className="mt-6 space-y-4 text-base leading-loose text-ink-light sm:text-lg">
-            <p>
-              לפעמים,<br />
-              למרות כל הרצון הטוב,<br />
-              {`פשוט אין את ה"קליק".`}
-            </p>
-            <p className="font-semibold text-ink">וזה בסדר.</p>
-            <p>
-              חיבור בין משפחה לנני הוא אישי מאוד.<br />
-              לכל משפחה יש את הקצב שלה.<br />
-              לכל נני יש את האישיות שלה.
-            </p>
-          </div>
-
-          {/* Guarantee card */}
-          <div className="mx-auto mt-7 max-w-md rounded-2xl bg-white/60 p-5 text-right ring-1 ring-beige/40">
-            <p className="text-base leading-relaxed text-ink sm:text-lg">
-              אם במהלך{" "}
-              <span className="font-bold">48 השעות הראשונות</span> תרגישו שאין
-              התאמה, נעשה את מירב המאמצים למצוא נני אחרת.
-            </p>
-            <div className="mt-4 border-r-[3px] border-gold pr-4">
-              <p className="text-base leading-relaxed text-ink-light sm:text-lg">
-                אם לא נמצא התאמה טובה יותר —
-              </p>
-              <p className="mt-1 text-base font-bold text-ink sm:text-lg">
-                דמי התיווך יוחזרו.
-              </p>
-            </div>
-          </div>
+        {/* מגיעות עד אליכם */}
+        <div style={CARD_BASE}>
+          <span style={ICON_SAGE}>
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#5F6B50" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M4 11 12 4l8 7"/>
+              <path d="M6 10v9h12v-9"/>
+            </svg>
+          </span>
+          <h3 style={{ margin: "0 0 5px", fontSize: "16.5px", fontWeight: 800, color: "#33302A" }}>מגיעות עד אליכם</h3>
+          <p style={{ margin: 0, fontSize: "14px", lineHeight: 1.5, color: "#7a7165" }}>לוילה או למלון שבו אתם שוהים.</p>
         </div>
-      </section>
 
-      {/* ── Section C: Our goal (sage) ── */}
-      <section
-        aria-labelledby="insta-goal-heading"
-        className="section-padding bg-sage/10"
-      >
-        <div className="mx-auto max-w-lg text-center">
-          <h2
-            id="insta-goal-heading"
-            className="text-xl font-bold text-ink sm:text-2xl"
-          >
-            🌴 המטרה שלנו
-          </h2>
-          <p className="mt-5 text-base leading-relaxed text-ink sm:text-lg">
-            אנחנו לא רק מחפשים נני.
-            <br />
-            אנחנו מחפשים את הנני הנכונה עבור המשפחה שלכם.
-          </p>
-
-          <div className="mt-7 flex flex-wrap justify-center gap-2 sm:gap-3">
-            {goalChips.map((chip) => (
-              <span
-                key={chip}
-                className="rounded-full bg-white/70 px-4 py-2 text-sm font-medium text-ink ring-1 ring-beige/60 sm:px-5 sm:text-base"
-              >
-                {chip}
-              </span>
-            ))}
-          </div>
-
-          <p className="mx-auto mt-8 max-w-sm text-base leading-loose text-ink-light sm:text-lg">
-            אנחנו מלווים אתכם לאורך כל הדרך,<br />
-            כדי שהחוויה שלכם בקוסמוי תהיה רגועה,<br />
-            נעימה,<br />
-            ומלאת רגעים טובים.
-          </p>
+        {/* תינוקות וילדים */}
+        <div style={CARD_BASE}>
+          <span style={ICON_SAGE}>
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#5F6B50" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M12 21s-7-4.6-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.4-7 10-7 10z"/>
+            </svg>
+          </span>
+          <h3 style={{ margin: "0 0 5px", fontSize: "16.5px", fontWeight: 800, color: "#33302A" }}>תינוקות וילדים</h3>
+          <p style={{ margin: 0, fontSize: "14px", lineHeight: 1.5, color: "#7a7165" }}>השירות מתאים לכל הגילאים.</p>
         </div>
-      </section>
-    </>
+
+        {/* לכל מצב */}
+        <div style={CARD_BASE}>
+          <span style={ICON_BLUSH}>
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#B96B50" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+              <path d="m12 3 2.1 4.6 5 .5-3.8 3.4 1.1 5L12 13.9 7.6 16.5l1.1-5L4.9 8.1l5-.5z"/>
+            </svg>
+          </span>
+          <h3 style={{ margin: "0 0 5px", fontSize: "16.5px", fontWeight: 800, color: "#33302A" }}>לכל מצב</h3>
+          <p style={{ margin: 0, fontSize: "14px", lineHeight: 1.5, color: "#7a7165" }}>חופשה משפחתית, זמן זוגי או ליווי ביום ובערב.</p>
+        </div>
+      </div>
+    </section>
   );
 }
