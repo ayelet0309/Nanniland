@@ -122,8 +122,7 @@ export default function InstagramHero() {
           אנחנו כאן <span style={{ color: "#B96B50" }}>בשבילכם</span> 💛
         </h1>
         <p style={{ margin: "0 auto 26px", fontSize: "17px", lineHeight: 1.65, color: "#6E6559", maxWidth: "40ch", textAlign: "center" }}>
-          נניות מקצועיות, חמות ואוהבות ילדים — שיהפכו את החופשה שלכם בקוסמוי לחוויה רגועה ונעימה,
-          מותאמת בדיוק לצרכים שלכם.
+          Nanniland הוא שירות שמחבר בין משפחות ישראליות, לנניות מקומיות מקצועיות, חמות ואוהבות ילדים -שיהפכו את החופשה שלכם בקוסמויי לחוויה רגועה ונעימה.
         </p>
         <a
           href={INSTAGRAM_CTA_URL}

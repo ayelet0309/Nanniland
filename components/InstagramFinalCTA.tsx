@@ -71,12 +71,12 @@ export default function InstagramFinalCTA() {
             <path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.2-5.6A8.4 8.4 0 1 1 21 11.5z" />
           </svg>
           <span dir="ltr" style={{ fontSize: "14.5px", fontWeight: 700, color: "#EFF2E9" }}>
-            WhatsApp +66 00 000 0000
+            WhatsApp +972 52-332-1059
           </span>
         </div>
 
         <p style={{ margin: "30px 0 0", fontSize: "12px", color: "#A9B29C" }}>
-          Nanniland · קוֹ סמוּי, תאילנד · hello@nanniland.com
+          Nanniland · קוֹ סמוּי, תאילנד
         </p>
       </div>
     </section>

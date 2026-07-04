@@ -27,8 +27,7 @@ function Check() {
   );
 }
 
-const SAFETY = ["ראיון אישי", "בדיקת מסמכים", "הכשרות מקצועיות", "סינון קפדני"];
-const MORE_CHIPS = ["ביטחון", "משחק", "חום", "אהבה"];
+const SAFETY = ["ריאיון אישי לכל נני", "בדיקת המלצות", "מסמכים ואישורים נדרשים", "סינון קפדני לפני כל התאמה"];
 
 export default function InstagramWhyNanniland() {
   return (
@@ -52,7 +51,7 @@ export default function InstagramWhyNanniland() {
             color: "#2E2A24",
           }}
         >
-          למה <span dir="ltr">Nanniland</span>?
+          למה משפחות בוחרות <span dir="ltr">Nanniland</span>?
         </h2>
         <p style={{ margin: "0 auto", fontSize: "16.5px", lineHeight: 1.6, color: "#8a7d6e", maxWidth: "26ch" }}>
           כי כשמדובר בילדים שלכם —<br />אין מקום לפשרות.
@@ -64,13 +63,13 @@ export default function InstagramWhyNanniland() {
         <div style={CARD}>
           <span style={BADGE_BLUSH}>❤️</span>
           <h3 style={H3}>אהבה אמיתית לילדים</h3>
-          <p style={BODY}>לא רק ניסיון — חום, סבלנות ויכולת ליצור חיבור אמיתי לילדים.</p>
+          <p style={BODY}>אנחנו לא מחפשים רק ניסיון.<br />אנחנו מחפשים נניות שיודעות להעניק ביטחון, חום וחיבור אמיתי לכל ילד.</p>
         </div>
 
         {/* בטיחות */}
         <div style={CARD}>
           <span style={BADGE_SAGE}>🛡️</span>
-          <h3 style={{ ...H3, marginBottom: "8px" }}>בטיחות מעל הכול</h3>
+          <h3 style={{ ...H3, marginBottom: "8px" }}>ביטחון מעל הכול</h3>
           <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
             {SAFETY.map((item) => (
               <span key={item} style={{ display: "flex", alignItems: "center", gap: "7px", fontSize: "13.5px", fontWeight: 600, color: "#5b5347" }}>
@@ -84,22 +83,15 @@ export default function InstagramWhyNanniland() {
         {/* אמינות */}
         <div style={CARD}>
           <span style={BADGE_BLUSH}>🤍</span>
-          <h3 style={H3}>אמינות ושקיפות</h3>
-          <p style={BODY}>חשוב לנו שתדעו בדיוק מי מגיע למשפחה שלכם — ואנחנו מלווים אתכם לאורך כל הדרך.</p>
+          <h3 style={H3}>ליווי אישי לאורך כל הדרך</h3>
+          <p style={BODY}>מהרגע הראשון ועד סוף החופשה,<br />אנחנו כאן לכל שאלה, שינוי או צורך.</p>
         </div>
 
         {/* יותר מנני */}
         <div style={CARD}>
           <span style={BADGE_SAGE}>🌴</span>
-          <h3 style={{ ...H3, marginBottom: "8px" }}>הרבה יותר מנני</h3>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "6px", marginBottom: "9px" }}>
-            {MORE_CHIPS.map((chip) => (
-              <span key={chip} style={{ fontSize: "12.5px", fontWeight: 700, color: "#5F6B50", background: "#EEF1E7", borderRadius: "20px", padding: "4px 11px" }}>
-                {chip}
-              </span>
-            ))}
-          </div>
-          <p style={{ ...BODY, fontSize: "13.5px" }}>ומאפשרת להורים ליהנות באמת מהחופשה.</p>
+          <h3 style={{ ...H3, marginBottom: "8px" }}>חופשה רגועה יותר</h3>
+          <p style={{ ...BODY, fontSize: "13.5px" }}>כשהילדים נהנים,<br />גם אתם יכולים לנוח באמת.<br />יותר זמן זוגי.<br />יותר שקט.<br />יותר חוויות.</p>
         </div>
       </div>
     </section>
